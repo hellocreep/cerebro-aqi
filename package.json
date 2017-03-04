@@ -1,7 +1,7 @@
 {
   "name": "cerebro-aqi",
   "version": "0.0.1",
-  "description": "Cerebro plugin to search AQI information from http://aqicn.org/",
+  "description": "Cerebro plugin to search air quality index information",
   "license": "MIT",
   "repository": "hellocreep/cerebro-aqi",
   "author": {

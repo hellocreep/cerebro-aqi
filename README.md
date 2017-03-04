@@ -1,6 +1,6 @@
 # cerebro-AQI
 
-> [Cerebro](http://www.cerebroapp.com) plugin to search AQI information from http://aqicn.org/
+> [Cerebro](http://www.cerebroapp.com) plugin to search air quality information
 
 ![](screenshot.jpeg)
 
