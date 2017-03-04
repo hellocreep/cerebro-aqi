@@ -1,6 +1,6 @@
 {
   "name": "cerebro-aqi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cerebro plugin to search air quality index information",
   "license": "MIT",
   "repository": "hellocreep/cerebro-aqi",
