@@ -5,11 +5,12 @@ const Preview = require('./Preview')
 const icon = require('./plugin-icon.png')
 
 const id = 'aqi';
-const BASE_URL = 'https://wind.waqi.info/nsearch/full/'
+const API_BASE_URL = 'https://wind.waqi.info/nsearch/full/'
+const SITE_URL = 'http://aqicn.org/'
 
 
-function fetchAiqData(city) {
-  return fetch(`${BASE_URL}${encodeURIComponent(city)}`).then(res => res.json())
+function fetchAiqData(cityName) {
+  return fetch(`${API_BASE_URL}${encodeURIComponent(cityName)}`).then(res => res.json())
 }
 
 const fn = ({term, display, actions}) => {
@@ -33,6 +34,7 @@ const fn = ({term, display, actions}) => {
         id,
         icon,
         title: `AQI of ${fullCityName}`,
+        onSelect: () => actions.open(`${SITE_URL}city/${encodeURIComponent(fullCityName)}`),
         getPreview: () => (
           <Preview
             averageAqi={averageAqi}
