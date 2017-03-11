@@ -7,23 +7,23 @@ const aqiLevels = {
     color: '#9E9E9E'
   },
   good: {
-    range: [0, 50],
+    range: [0, 51],
     color: '#009966'
   },
   moderate: {
-    range: [51, 100],
+    range: [51, 101],
     color: '#ffde33'
   },
   unhealthyForSensitiveGroups: {
-    range: [101, 150],
+    range: [101, 151],
     color: '#ff9933'
   },
   unhealthy: {
-    range: [151, 200],
+    range: [151, 201],
     color: '#cc0033'
   },
   veryUnhealthy: {
-    range: [201, 300],
+    range: [201, 301],
     color: '#660099'
   },
   hazardous: {
