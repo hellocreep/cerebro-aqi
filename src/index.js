@@ -14,7 +14,7 @@ function fetchAiqData(cityName) {
 }
 
 const fn = ({term, display, actions}) => {
-  let match = term.match(/^aqi\s(.+)$/)
+  let match = term.toLowerCase().match(/^aqi\s(.+)$/)
 
   if (match) {
     const cityName = match[1];
