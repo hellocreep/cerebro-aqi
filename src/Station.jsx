@@ -17,20 +17,19 @@ const commonApiNumberStyles = {
 }
 
 const Station = ({aqiData}) => {
-  const aqiNumber = _.get(aqiData, 's.a', '')
+  const aqiNumber = _.get(aqiData, 'aqi', '')
   const aqiNumberStyles = _.merge({}, commonApiNumberStyles, {
     backgroundColor: getAqiLevelColor(aqiNumber)
   })
 
   if (_.isEmpty(aqiNumber)) return null
 
-  const cityName = _.get(aqiData, 's.n[1]', '')
-  const cityNameAlt = _.get(aqiData, 's.n[0]', '')
+  const cityName = _.get(aqiData, 'name', '')
 
   return (
     <li style={stattionStyles}>
       <span style={aqiNumberStyles}>{aqiNumber}</span>
-      {`${cityName} ${cityNameAlt}`}
+      {cityName}
     </li>
   )
 }

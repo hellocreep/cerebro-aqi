@@ -36,7 +36,7 @@ const dateTimeStyles = {
 }
 
 function renderStation(aqiList) {
-  return _(aqiList).drop().compact().map((aqiData, index) => <Station key={index} aqiData={aqiData} />).value()
+  return _(aqiList).compact().map((aqiData, index) => <Station key={index} aqiData={aqiData} />).value()
 }
 
 module.exports = (props) => {
